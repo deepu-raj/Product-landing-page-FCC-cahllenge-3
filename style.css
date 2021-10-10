@@ -6,7 +6,9 @@
 *,::before,::after{
     box-sizing: border-box;
 }
-a:hover{
+
+
+a:hover, button{
     cursor: pointer;
 }
 main{
@@ -66,11 +68,148 @@ img{
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
+    width:75%;
+    padding-top: 1rem;
 }
 #email{
-    min-width:30%;
+    min-width:40%;
     margin-bottom: 0.5rem;
     min-height: 2rem;
     border: none;
     border-radius: 0.25rem;;
+}
+#submit{
+    min-width:20%;
+    min-height: 1.75rem;
+    border-style: none;
+
+}
+
+.container{
+    width:80%;
+    margin:auto;
+
+}
+#section1{
+    /*background-color: violet;*/
+}
+#section1-list{
+    list-style: none;
+    padding-inline-start: 0rem;
+}
+
+.section1-element{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.section1-image{
+    background-color: rgb(212, 166, 16);
+    font-size:2vw;
+    width:15%;
+    height:4rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.section1-desc>p{
+    padding:0;
+    margin-top:-1.1rem; /* any other method*/
+    font-size: 1.15rem;
+    
+}
+#video-section{
+    background-color: turquoise;
+    text-align: center;
+}
+#section2{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+   
+}
+.section2-elem>ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    text-align: center;
+   
+}
+.section2-elem>ul>li{
+    line-height: 1.75;
+    font-size: large;
+   
+}
+.section2-elem{
+    border-style: solid;
+    border-radius: 00.25rem;
+    min-width:30%;
+    min-height:25vw;
+    margin-top: 1rem;
+}
+.price{
+    font-weight: bold;
+    font-size: x-large !important;
+    margin-top: 1rem;
+}
+.section2-headline{
+    text-align: center;
+    padding:0;
+    margin:0;
+    height:2.9em;
+    background-color: rgb(223, 211, 211);
+    padding-top:0.75rem;
+}
+.select{
+ 
+  text-align:center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+   
+}
+.select>button{
+    min-height: 3em;
+    min-width: 6.5em;
+    padding:1em;
+    font-size:large;
+    background-color: rgb(204, 169, 11);
+    border-style: none;
+   }
+#footer-wrapper{
+    background-color: yellowgreen;
+    margin-top:3rem;
+    padding-top: 0.45em;
+    padding-bottom: 0.45em;
+}
+#footer-elem{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: right;
+}
+#footer-links>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-bottom:0;
+   
+}
+#footer-links>ul>li{
+    margin-right: 1.25em;
+    font-size: large;
+    margin-bottom:0;
+}
+#copyright{
+    margin-top:-0.55em;
+    padding-right: 1.25em;
+}
+@media screen {
+    
 }
