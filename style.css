@@ -9,30 +9,37 @@
 }
 
 
-a:hover, button{
-    cursor: pointer;
-}
+
 main{
     background-color: var(--primary-color);
     margin:0;
     display: block;
+       
+}
+.container{
+    width:80%;
+    margin:auto;
     
 }
 
 header{
-    background-color: var(--primary-color); 
+    background-color: var(--primary-color);
     position:sticky;
     top:0;
 }
+
 #nav-wrapper{
    /*sticky does not work here/ */
-    
+    background-color: chartreuse;
+      
 }
 #image-container{
-    width:60vw;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    
+    background-color: brown;
+    flex-grow: 1;
+       
+}
+#nav-section{
+    /* include flex grow in responsive*/
 }
 img{
     width:100%;
@@ -40,21 +47,19 @@ img{
     max-width: 300px;
     padding-top:1rem;
     height: 4.0rem;
-}
+    }
 #navbar{
     display:flex;
     flex-direction: row;
     justify-content:space-between;
     flex-wrap: wrap;
-}
+      }
 #nav-links{
     list-style: none;
     display: flex;
     flex-direction:row;
     justify-content: space-around;
     padding-top:1rem;
-    
-    
 }
 #nav-links>li{
     margin-right: 2em;
@@ -71,7 +76,6 @@ img{
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    width:75%;
     padding-top: 1rem;
 }
 #email{
@@ -88,11 +92,7 @@ img{
 
 }
 
-.container{
-    width:80%;
-    margin:auto;
 
-}
 #section1{
     /*background-color: violet;*/
 }
@@ -214,16 +214,23 @@ img{
     margin-top:-0.55em;
     padding-right: 1.25em;
 }
-@media all and (max-width:500px){
+iframe {
+    max-width: 560px;
+    width: 100%;
+}
+a:hover, button:hover,#submit:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:500px) {
+    main {
+        display: block;
+    }
     .container{
-        width:100%;
-    
-   }
-   #email{
-       width:95%;
-   }
-   #submit{
-       width:85%;
-   }
+        width: 100%;
+        
+    }
+    #email,#submit{
+        width:85%;
+    }
 
 }
