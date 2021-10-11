@@ -3,6 +3,7 @@
     --background-color:rgb(190, 184, 184);
 }
 
+
 *,::before,::after{
     box-sizing: border-box;
 }
@@ -14,6 +15,8 @@ a:hover, button{
 main{
     background-color: var(--primary-color);
     margin:0;
+    display: block;
+    
 }
 
 header{
@@ -27,8 +30,8 @@ header{
 }
 #image-container{
     width:60vw;
-    padding-left: 4vh;
-    padding-right: 4vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
     
 }
 img{
@@ -103,12 +106,13 @@ img{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+   
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
 .section1-image{
     background-color: rgb(212, 166, 16);
-    font-size:2vw;
+    font-size:1em;
     width:15%;
     height:4rem;
     text-align: center;
@@ -210,6 +214,16 @@ img{
     margin-top:-0.55em;
     padding-right: 1.25em;
 }
-@media screen {
+@media all and (max-width:500px){
+    .container{
+        width:100%;
     
+   }
+   #email{
+       width:95%;
+   }
+   #submit{
+       width:85%;
+   }
+
 }
